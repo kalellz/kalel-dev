@@ -22,9 +22,9 @@ function App() {
           <div className='Home-Image'>
             <img src={Memoji1}/>
           </div>
+          <div className='Home-Ball' />
         </section>
         <section className='Track-About'>
-          <div className='About-Ball' />
          <div className='About-Texts'>
             <h1>
               Quem Sou Eu?  
