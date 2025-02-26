@@ -1,13 +1,92 @@
-.Main{
-  margin: 0;
+* {
   box-sizing: border-box;
-  .Header{
+}
 
+.Body {
+  margin: 0;
+  width: 100%; // Alterado de 100vw para 100%
+  font-family: 'Inter', sans-serif;
+
+  .Header {
+    display: flex;
+    justify-content: end;
+    padding: 1.5em;
+    background-color: #232323;
+    width: 100%;
+    a {
+      margin-right: 5%;
+      color: white;
+      text-decoration: none;
+      font-size: 1em;
+      font-family: 'Inter', sans-serif;
+    }
   }
-  .Body{
 
+  .Main {
+    .Track-Home {
+      height: 90.8vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: #232323;
+      position: relative; 
+
+      .Home-Texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        h1 {
+          font-size: 4em;
+          height: 5%;
+        }
+        p {
+          font-size: 1.5em;
+        }
+      }
+
+      .Home-Image {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        bottom: 0;
+        width: 100%; 
+        img {
+          width: 25%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .Track-About {
+      height: 100vh;
+      background-color: white;
+      color: #202020;
+      position: relative; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .About-Texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        h1 {
+          font-size: 4em;
+          height: 5%;
+        }
+        p {
+          font-size: 1.5em;
+        }
+      }
+    }
   }
-  .Footer{
 
+  .Footer {
+    // Estilos para o rodapé
   }
 }
