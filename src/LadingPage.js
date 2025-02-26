@@ -1,4 +1,5 @@
 import './LandingPage.scss';
+import { Link } from 'react-scroll';
 import Hability from './components/hability';
 
 import Memoji1 from './assets/images/melhor-removebg-preview.png';
@@ -26,17 +27,17 @@ import Loc from './assets/images/contacts/pin-de-localizacao 1.png';
 import Email from './assets/images/contacts/o-email 1.png';
 import Number from './assets/images/contacts/silhueta-de-alca-de-telefone 1.png';
 
-import Wpp from './assets/images/footer/image 1.png';
+import Wpp from './assets/images/footer/image 3.png';
 import Linkedin from './assets/images/footer/image 2.png';
-import Github2 from './assets/images/footer/image 3.png';
+import Github2 from './assets/images/footer/image 1.png';
 
 function App() {  
   return (
-    <body className='Body'>
+    <main className='Body'>
       <header className='Header'>
-        <a href='#Sobre'>Sobre</a>
-        <a href='#Projetos'>Projetos</a>
-        <a href='#Contato'>Contato</a>
+          <Link to="Sobre" smooth={true} duration={800}>Sobre</Link>
+          <Link to="Projetos" smooth={true} duration={800}>Projetos</Link>
+          <Link to="Contato" smooth={true} duration={800} >Contato</Link>
       </header>
       <main className='Main'>
         <section className='Track-Home'>
@@ -56,7 +57,7 @@ function App() {
           </div>
         </section>
         <section className='Track-About'>
-         <div className='About-Texts'>
+         <div className='About-Texts' id='Sobre'>
             <h1>
               Quem Sou Eu?  
             </h1>
@@ -110,7 +111,7 @@ function App() {
              />
           </main>
         </section>
-        <section className='Track-Projects'>
+        <section className='Track-Projects' id='Projetos'>
           <h1>
             Novos Projetos Em Breve...
           </h1>
@@ -119,14 +120,14 @@ function App() {
           </div>
           <img src={Memoji3} />
         </section>
-        <section className='Track-Contacts'>
+        <section className='Track-Contacts' id='Contato'>
           <div className='Contacts-Title'>
             <h1>Contatos</h1>
           </div>
           <div className='Contacts-Main'>
             <Contact img={Loc} 
             h1='Localização'
-            p='(11) 95244-3450'
+            p='São Paulo - Brasil'
             />
             <Contact img={Email} 
             h1='E-Mail'
@@ -134,7 +135,7 @@ function App() {
             />
             <Contact img={Number} 
             h1='Number'
-            p='São Paulo - Brasil'
+            p='(11) 95244-3450'
             />
           </div>
           <div className='Contacts-Text'>
@@ -147,16 +148,24 @@ function App() {
         </section>
       </main>
       <footer className='Footer'>
-      <div>
-        <p>The website was compleely coded and designed by me.</p>
-      </div>
-      <div className='Footer-Links'>
-        <img src={Wpp}/>
-        <img src={Linkedin}/>
-        <img src={Github2}/>
-      </div>
+        <div>
+          <p>The website was compleely coded and designed by me.</p>
+        </div>
+        <div className="Footer-Links">
+          <a href="https://wa.me/11952443450" target="_blank" rel="noopener noreferrer">
+              <img src={Wpp} alt="WhatsApp" />
+          </a>
+
+          <a href="https://www.linkedin.com/in/kalel-rodrigues-76025123b/" target="_blank" rel="noopener noreferrer">
+              <img src={Linkedin} alt="LinkedIn" />
+          </a>
+
+          <a href="https://github.com/kalellz" target="_blank" rel="noopener noreferrer">
+              <img src={Github2} alt="GitHub" />
+          </a>
+        </div>  
       </footer>
-    </body>
+    </main>
   );
 }
 export default App;

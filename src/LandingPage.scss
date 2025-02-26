@@ -23,9 +23,15 @@
     transition: transform 0.2s ease;
   }
 }
-
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
 .Body {
   overflow-x: hidden;
+  padding: 0;
   margin: 0;
   width: 100%; // Alterado de 100vw para 100%
   font-family: 'Inter', sans-serif;
@@ -296,7 +302,8 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
-      .Contact{
+        
+        .Contact{
         width: 20%;
         display: flex;
         align-items: center;
@@ -339,14 +346,17 @@
         }
         height: 50%;
         img{
-          height: 40%;
+          height: 40.5%;
           right: 0;
           position: absolute;
+          transition: transform 0.5s;
+        }
+        img:hover{
+          transform: scale(1.01);
         }
       }
     }
   }
-  
   .Footer {
     display: flex;
     width: 100%;
@@ -357,25 +367,30 @@
     color: white;
     @include texts;
     flex-direction: row;
-    p{
-      font-size: 1em;
+
+    p {
+        font-size: 1em;
     }
-    .Footer-Links{
-      position: absolute;
-      display: flex;
-      justify-content: space-around;
-      right: 0;
-      width: 13%;
-      margin-right: 5%;
-      cursor: pointer;
-      img{
-        transition: transform 0.5s;
-        height: 5%;
-        width: 20%;
-      }
-      img:hover{
-        transform: scale(1.05);
-      }
+
+    .Footer-Links {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;  
+        right: 0;
+        width: 13%;
+        margin-right: 5%;
+        cursor: pointer;
+
+        img {
+            transition: transform 0.5s;
+            height: 2.5em;  
+            width: auto;  
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
     }
-  }
+}
 }
