@@ -1,7 +1,7 @@
 import './LandingPage.scss';
 import Memoji1 from './assets/images/melhor-removebg-preview.png';
 
-function App() {
+function App() {  
   return (
     <body className='Body'>
       <header className='Header'>
@@ -24,6 +24,7 @@ function App() {
           </div>
         </section>
         <section className='Track-About'>
+          <div className='About-Ball' />
          <div className='About-Texts'>
             <h1>
               Quem Sou Eu?  
