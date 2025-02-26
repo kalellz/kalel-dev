@@ -20,6 +20,15 @@ import Htmlcss from './assets/images/languages/htmlcss.png';
 import Logic from './assets/images/habilities/logica.png';
 import Fullstack from './assets/images/habilities/fullstack.png';
 import Equipe from './assets/images/habilities/equipe.png';
+import Contact from './components/contact';
+
+import Loc from './assets/images/contacts/pin-de-localizacao 1.png';
+import Email from './assets/images/contacts/o-email 1.png';
+import Number from './assets/images/contacts/silhueta-de-alca-de-telefone 1.png';
+
+import Wpp from './assets/images/footer/image 1.png';
+import Linkedin from './assets/images/footer/image 2.png';
+import Github2 from './assets/images/footer/image 3.png';
 
 function App() {  
   return (
@@ -115,7 +124,18 @@ function App() {
             <h1>Contatos</h1>
           </div>
           <div className='Contacts-Main'>
-            
+            <Contact img={Loc} 
+            h1='Localização'
+            p='(11) 95244-3450'
+            />
+            <Contact img={Email} 
+            h1='E-Mail'
+            p='kalelzonasul@gmail.com'
+            />
+            <Contact img={Number} 
+            h1='Number'
+            p='São Paulo - Brasil'
+            />
           </div>
           <div className='Contacts-Text'>
             <div>
@@ -127,7 +147,14 @@ function App() {
         </section>
       </main>
       <footer className='Footer'>
-
+      <div>
+        <p>The website was compleely coded and designed by me.</p>
+      </div>
+      <div className='Footer-Links'>
+        <img src={Wpp}/>
+        <img src={Linkedin}/>
+        <img src={Github2}/>
+      </div>
       </footer>
     </body>
   );
