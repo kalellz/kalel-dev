@@ -7,14 +7,22 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
+  user-select: none;
   h1 {
     font-size: 4em;
     height: 5%;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: text-shadow 0.5s ease;
   }
-
+  h1:hover{
+    text-shadow: 0 0 2px #ffffff, 0 0 5px #ffffff, 0 0 5px #ffffff;
+  }
   p {
     font-size: 1.5em;
+    transition: transform 0.3s ease;
+  }
+  p:hover{
+    transform: perspective(500px) rotateX(20deg);
   }
 }
 .Body {
