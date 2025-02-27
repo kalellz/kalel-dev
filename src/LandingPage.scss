@@ -197,10 +197,9 @@ html, body {
         justify-content: center;
         align-items: center;
         width: 80%;
-
         background: #202020;
-        /* Inner Shadow/600 */
-        box-shadow: inset 0px 1em 2em -1em rgba(12, 12, 13, 0.4);
+        box-shadow: inset 0px 4px 4px -1px rgba(12, 12, 13, 0.05);
+        border-radius: 16px 16px 0px 0px;
         border-radius: 1em 1em 0px 0px;
         @include texts;
         color: white;
@@ -346,7 +345,7 @@ html, body {
         }
         height: 50%;
         img{
-          height: 40.5%;
+          height: 40%;
           right: 0;
           position: absolute;
           transition: transform 0.5s;
@@ -389,7 +388,7 @@ html, body {
         }
 
         img:hover {
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
     }
 }
