@@ -6,7 +6,7 @@ function Contact({img, h1, p}){
             <div className='Contact-Ball'>
                 <img src={img} />
             </div>
-            <div>
+            <div className='Contact-Text'>
                 <h1>
                     {h1}
                 </h1>
