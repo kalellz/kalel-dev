@@ -683,8 +683,41 @@ html, body {
   }
 }
 
-
 /* Telas pequenas (celulares pequenos, até 480px) */
 @media (max-width: 480px) {
-  /* Seus estilos aqui */
+  .Track-Home{
+    justify-content: start !important;
+    height: 50vh !important;
+  }
+  .Home-Image{
+        img {
+          width: 70% !important;
+        }
+  }
+  .Home-Ball{
+    bottom: -15vh !important;
+  }
+  .Track-About{
+    height: 50vh !important;
+  }
+  .Header-Div{
+   flex-direction: column; 
+  }
+  .Languages-Ball{
+    top: -5vh !important;
+    max-width: clamp(13rem, 22vw, 30rem);
+    max-height: clamp(13rem, 25vw, 33rem);
+  }
+  .Track-Projects h1{
+    font-size: 1.5em !important;
+    padding: 10% 0 !important;
+  }
+  .Track-Projects{
+    img{
+        height: 40% !important;
+    }
+  }
+  .Project-Main{
+    width: 100% !important;
+  }
 }
