@@ -134,7 +134,7 @@ function App() {
             p='kalel.rodrigues@icloud.com'
             />
             <Contact img={Number} 
-            h1='Number'
+            h1='Numero'
             p='(11) 95244-3450'
             />
           </div>
