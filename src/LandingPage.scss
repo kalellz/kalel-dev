@@ -182,6 +182,10 @@ html, body {
         height: 40%;
         @include texts;
         color: white;
+        p{
+          width: 65%;
+          text-align: center;
+        }
       }
     }
     .Track-Habilities{

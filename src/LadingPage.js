@@ -86,9 +86,9 @@ function App() {
           </div>
           <div className='Languages-Text'>
               <p>
-                Tenho 18 anos e sou um jovem apaixonado pela área da tecnologia!
+                Desde muito novo, gostava de ficar no computador explorando tudo o que podia. Com o tempo, essa curiosidade virou paixão por programação e web design.              
               </p>
-            </div>
+          </div>
         </section>
         <section className='Track-Habilities'>
           <header className='Habilities-Header'>
@@ -149,7 +149,7 @@ function App() {
       </main>
       <footer className='Footer'>
         <div>
-          <p>The website was compleely coded and designed by me.</p>
+          <p>The website was completely coded and designed by me.</p>
         </div>
         <div className="Footer-Links">
           <a href="https://wa.me/11952443450" target="_blank" rel="noopener noreferrer">
