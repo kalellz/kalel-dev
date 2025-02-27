@@ -332,18 +332,21 @@ html, body {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 20%;  /* Define um tamanho fixo */
-            aspect-ratio: 1/1;  /* Mantém o formato circular */
+            width: 5em; /* Base flexível (~80px se o font-size for 16px) */
+            max-width: 12vw; /* Evita crescimento excessivo */
+            min-width: 3.125em; /* Aproximadamente 50px */
+            aspect-ratio: 1/1; /* Mantém o formato circular */
             border-radius: 50%;
             background: #ffffff;
             margin: 0 5%;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Adiciona um brilho sutil */
-    
+            box-shadow: 0 0 1em rgba(255, 255, 255, 0.3); /* Suaviza o efeito */
+            flex-shrink: 0; /* Impede distorções no flexbox */
+          
             img {
-              width: 50%; /* Mantém um tamanho proporcional */
-              height: 50%;
+              width: 50%; /* Mantém o tamanho proporcional */
+              height: auto;
             }
-          }
+          }          
         }
       }
     
@@ -415,3 +418,64 @@ html, body {
     }
 }
 }
+/* Telas pequenas (celulares pequenos, até 480px) */
+@media (max-width: 480px) {
+  /* Seus estilos aqui */
+}
+
+/* Celulares médios e grandes (até 768px) */
+@media (max-width: 768px) {
+  /* Seus estilos aqui */
+}
+
+/* Tablets e dispositivos médios (até 1024px) */
+@media (max-width: 1024px) {
+  /* Seus estilos aqui */
+}
+
+/* Desktops menores e laptops (até 1280px) */
+@media (max-width: 1280px) {
+  @mixin texts{
+    h1{
+      font-size: 3em !important;
+    }
+    p{
+      font-size: 1em !important;
+    }
+  }
+  .Home-Texts{
+    @include texts;
+  }
+  .Languages-Header{
+      img{
+        width: auto;
+        max-height: 20%;
+      }
+    }
+    .Languages-Ball{
+      top: -10vh !important;
+      border-radius: 50%;
+      position: absolute;
+      max-width: clamp(15rem, 27vw, 35rem);
+      max-height: clamp(13rem, 25vw, 33rem);
+      
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 100%; 
+        object-fit: cover;
+      }
+    }
+    .Languages-Text{
+      width: 100%;
+      height: 40%;
+      @include texts;
+      color: white;
+      p{
+        width: 100%;
+        min-width: 90%;
+        text-align: center;
+      }
+    }
+}
+
