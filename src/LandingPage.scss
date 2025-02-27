@@ -687,12 +687,21 @@ html, body {
 @media (max-width: 480px) {
   .Track-Home{
     justify-content: start !important;
-    height: 50vh !important;
+    height: 70vh !important;
+  }
+  .About-Texts{
+    text-align: center ;
   }
   .Home-Image{
         img {
           width: 70% !important;
         }
+  }
+  .Habilities-Header h1{
+    font-size: 1.5em !important;
+  }
+  .Languages-Text{
+    height: 60% !important;
   }
   .Home-Ball{
     bottom: -15vh !important;
@@ -719,5 +728,8 @@ html, body {
   }
   .Project-Main{
     width: 100% !important;
+  }
+  .Contacts-Text{
+    text-align: center !important;
   }
 }
