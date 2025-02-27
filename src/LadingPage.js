@@ -131,7 +131,7 @@ function App() {
             />
             <Contact img={Email} 
             h1='E-Mail'
-            p='kalelzonasul@gmail.com'
+            p='kalel.rodrigues@icloud.com'
             />
             <Contact img={Number} 
             h1='Number'

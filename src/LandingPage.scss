@@ -272,9 +272,10 @@ html, body {
       }
       img{
         position: absolute;
-        bottom: 0;
+        bottom: -1em;
         left: 0;
-        height: auto;
+        height: 60%;
+        width: auto;
         transition: transform 0.5s;
       }
       img:hover{
@@ -291,78 +292,91 @@ html, body {
 
       }
     }
-    .Track-Contacts{
+    .Track-Contacts {
       height: 80vh;
       background-color: #2c2c2c;
-      .Contacts-Title{
+    
+      .Contacts-Title {
         height: 25%;
         color: white;
         @include texts;
-        h1{
+    
+        h1 {
           margin: 0;
           padding: 0;
           height: auto;
         }
       }
-      .Contacts-Main{
+    
+      .Contacts-Main {
         height: 25%;
         width: 100%;
         display: flex;
         justify-content: space-around;
-        
-        .Contact{
-        width: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        p, h1{
-          height: auto;
-          padding: 0;
-          margin: 0;
-        }
-        .Contact-Ball{
+    
+        .Contact {
+          width: 20%;
           display: flex;
-          justify-content: center;
           align-items: center;
-          height: 50%;
-          width: 25%;
-          border-radius: 100%;
-          background: #FFFFFF;
-          margin: 0 5%;
-          img{
-            width: auto;
-            height: 60% ;
+          justify-content: center;
+          color: white;
+    
+          p,
+          h1 {
+            height: auto;
+            padding: 0;
+            margin: 0;
+          }
+    
+          .Contact-Ball {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;  /* Define um tamanho fixo */
+            aspect-ratio: 1/1;  /* Mantém o formato circular */
+            border-radius: 50%;
+            background: #ffffff;
+            margin: 0 5%;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Adiciona um brilho sutil */
+    
+            img {
+              width: 50%; /* Mantém um tamanho proporcional */
+              height: 50%;
+            }
           }
         }
       }
-      }
-      .Contacts-Text{
+    
+      .Contacts-Text {
         color: white;
         @include texts;
         justify-content: start;
         align-items: start;
         padding: 0 5%;
-        h1{
+        height: 50%;
+    
+        h1 {
           font-size: 2.5em;
         }
-        p{
+    
+        p {
           padding: 2% 0;
           font-size: 1em;
           width: 60%;
         }
-        height: 50%;
-        img{
+    
+        img {
           height: 40%;
           right: 0;
           position: absolute;
           transition: transform 0.5s;
         }
-        img:hover{
+    
+        img:hover {
           transform: scale(1.01);
         }
       }
-    }
+    }    
   }
   .Footer {
     display: flex;
