@@ -1,11 +1,11 @@
 import '../LandingPage.scss'
 
-function Contact({img, h1, p}){
+function Contact({img, h1, p, link}){
     return(
         <section className='Contact'>
-            <div className='Contact-Ball'>
+            <a href={link} className='Contact-Ball'>
                 <img src={img} />
-            </div>
+            </a>
             <div className='Contact-Text'>
                 <h1>
                     {h1}

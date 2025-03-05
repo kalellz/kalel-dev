@@ -128,14 +128,17 @@ function App() {
             <Contact img={Loc} 
             h1='Localização'
             p='São Paulo - Brasil'
+            link='https://www.google.com/maps?q=São+Paulo,+Brasil'
             />
             <Contact img={Email} 
             h1='E-Mail'
             p='kalel.rodrigues@icloud.com'
+            link='mailto:kalel.rodrigues@icloud.com'
             />
             <Contact img={Number} 
-            h1='Numero'
+            h1='Número'
             p='(11) 95244-3450'
+            link='https://wa.me/11952443450'
             />
           </div>
           <div className='Contacts-Text'>

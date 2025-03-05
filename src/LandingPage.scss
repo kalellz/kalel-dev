@@ -333,6 +333,7 @@ html, body {
         justify-content: space-around;
     
         .Contact {
+          text-decoration: none;
           width: 20%;
           display: flex;
           align-items: center;
@@ -359,12 +360,15 @@ html, body {
             margin: 0 5%;
             box-shadow: 0 0 1em rgba(255, 255, 255, 0.3); /* Suaviza o efeito */
             flex-shrink: 0; /* Impede distorções no flexbox */
-          
+          transition: transform 0.5s;
             img {
               width: 50%; /* Mantém o tamanho proporcional */
               height: auto;
             }
-          }          
+          }         
+          .Contact-Ball:hover{
+            transform: scale(0.9);
+          } 
         }
       }
     
