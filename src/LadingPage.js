@@ -18,7 +18,7 @@ import Materialui from './assets/images/languages/material-ui-icon-1024x814-sytj
 import Mysql from './assets/images/languages/mysql.png';
 import Htmlcss from './assets/images/languages/htmlcss.png';
 
-import Logic from './assets/images/habilities/logica.png';
+import Logic from './assets/images/habilities/plano-tatico.png';
 import Fullstack from './assets/images/habilities/fullstack.png';
 import Equipe from './assets/images/habilities/equipe.png';
 import Contact from './components/contact';
