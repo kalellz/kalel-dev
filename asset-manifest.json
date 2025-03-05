@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kalel-dev/static/css/main.5a3cf01f.css",
-    "main.js": "/kalel-dev/static/js/main.a5c9d9a7.js",
+    "main.css": "/kalel-dev/static/css/main.0a0d88d7.css",
+    "main.js": "/kalel-dev/static/js/main.5e024cdd.js",
     "static/media/IMG_8240-removebg-preview 1.png": "/kalel-dev/static/media/IMG_8240-removebg-preview 1.f5846b464c42d7ebc37c.png",
     "static/media/melhor-removebg-preview.png": "/kalel-dev/static/media/melhor-removebg-preview.0e9996123807f06376a3.png",
     "static/media/IMG_8239__1_-removebg-preview.png": "/kalel-dev/static/media/IMG_8239__1_-removebg-preview.d08cbd476a1fe58c2049.png",
@@ -9,7 +9,7 @@
     "static/media/C5CDF8CF-3398-4C9F-A190-71C9874A741C.jpeg": "/kalel-dev/static/media/C5CDF8CF-3398-4C9F-A190-71C9874A741C.b5cab569fcca5b6a40e9.jpeg",
     "static/media/react-icon-1024x897-k6c5dil3.png": "/kalel-dev/static/media/react-icon-1024x897-k6c5dil3.8cf15fe9a546ffb69e65.png",
     "static/media/IMG_8244-removebg-preview 1.png": "/kalel-dev/static/media/IMG_8244-removebg-preview 1.b23ad6203303298c1088.png",
-    "static/media/logica.png": "/kalel-dev/static/media/logica.9c103df8c0892fbb64b3.png",
+    "static/media/plano-tatico.png": "/kalel-dev/static/media/plano-tatico.c77fa9da53a0ac1fd794.png",
     "static/media/equipe.png": "/kalel-dev/static/media/equipe.731b96b66225c997e807.png",
     "static/media/fullstack.png": "/kalel-dev/static/media/fullstack.c81ab36d3a875952aa5d.png",
     "static/media/image 2.png": "/kalel-dev/static/media/image 2.d7ddf4f9d7ed2d78835f.png",
@@ -18,11 +18,11 @@
     "static/media/image 1.png": "/kalel-dev/static/media/image 1.0ce7054cb64f4e6b4048.png",
     "static/media/nodejs-logo-svgrepo-com.svg": "/kalel-dev/static/media/nodejs-logo-svgrepo-com.052babfd08e751811f34816a1fab3a6a.svg",
     "index.html": "/kalel-dev/index.html",
-    "main.5a3cf01f.css.map": "/kalel-dev/static/css/main.5a3cf01f.css.map",
-    "main.a5c9d9a7.js.map": "/kalel-dev/static/js/main.a5c9d9a7.js.map"
+    "main.0a0d88d7.css.map": "/kalel-dev/static/css/main.0a0d88d7.css.map",
+    "main.5e024cdd.js.map": "/kalel-dev/static/js/main.5e024cdd.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a3cf01f.css",
-    "static/js/main.a5c9d9a7.js"
+    "static/css/main.0a0d88d7.css",
+    "static/js/main.5e024cdd.js"
   ]
 }
