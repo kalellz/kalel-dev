@@ -134,6 +134,10 @@ html, body {
         img{
           width: 50%;
           height: auto;
+          transition: transform 0.5s;
+        }
+        img:hover{
+          transform: scale(1.01);
         }
       }
     }
@@ -199,6 +203,10 @@ html, body {
         height: 40%;
         @include texts;
         color: white;
+        p{
+          width: 65%;
+          text-align: center;
+        }
       }
     }
     .Track-Habilities{
@@ -281,9 +289,10 @@ html, body {
       }
       img{
         position: absolute;
-        bottom: 0;
+        bottom: -1em;
         left: 0;
-        height: auto;
+        height: 60%;
+        width: auto;
         transition: transform 0.5s;
       }
       img:hover{
@@ -300,78 +309,94 @@ html, body {
 
       }
     }
-    .Track-Contacts{
+    .Track-Contacts {
       height: 80vh;
       background-color: #2c2c2c;
-      .Contacts-Title{
+    
+      .Contacts-Title {
         height: 25%;
         color: white;
         @include texts;
-        h1{
+    
+        h1 {
           margin: 0;
           padding: 0;
           height: auto;
         }
       }
-      .Contacts-Main{
+    
+      .Contacts-Main {
         height: 25%;
         width: 100%;
         display: flex;
         justify-content: space-around;
-        
-        .Contact{
-        width: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        p, h1{
-          height: auto;
-          padding: 0;
-          margin: 0;
-        }
-        .Contact-Ball{
+    
+        .Contact {
+          width: 20%;
           display: flex;
-          justify-content: center;
           align-items: center;
-          height: 50%;
-          width: 25%;
-          border-radius: 100%;
-          background: #FFFFFF;
-          margin: 0 5%;
-          img{
-            width: auto;
-            height: 60% ;
+          justify-content: center;
+          color: white;
+    
+          p,
+          h1 {
+            height: auto;
+            padding: 0;
+            margin: 0;
           }
+    
+          .Contact-Ball {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 5em; /* Base flexível (~80px se o font-size for 16px) */
+            max-width: 12vw; /* Evita crescimento excessivo */
+            min-width: 3.125em; /* Aproximadamente 50px */
+            aspect-ratio: 1/1; /* Mantém o formato circular */
+            border-radius: 50%;
+            background: #ffffff;
+            margin: 0 5%;
+            box-shadow: 0 0 1em rgba(255, 255, 255, 0.3); /* Suaviza o efeito */
+            flex-shrink: 0; /* Impede distorções no flexbox */
+          
+            img {
+              width: 50%; /* Mantém o tamanho proporcional */
+              height: auto;
+            }
+          }          
         }
       }
-      }
-      .Contacts-Text{
+    
+      .Contacts-Text {
         color: white;
         @include texts;
         justify-content: start;
         align-items: start;
         padding: 0 5%;
-        h1{
+        height: 50%;
+    
+        h1 {
           font-size: 2.5em;
         }
-        p{
+    
+        p {
           padding: 2% 0;
           font-size: 1em;
           width: 60%;
         }
-        height: 50%;
-        img{
+    
+        img {
           height: 40%;
           right: 0;
           position: absolute;
           transition: transform 0.5s;
         }
-        img:hover{
+    
+        img:hover {
           transform: scale(1.01);
         }
       }
-    }
+    }    
   }
   .Footer {
     display: flex;
@@ -382,7 +407,6 @@ html, body {
     height: 20vh;
     color: white;
     @include texts;
-    flex-direction: row;
 
     p {
         font-size: 1em;
@@ -409,4 +433,320 @@ html, body {
         }
     }
 }
+}
+/* Desktops menores e laptops (até 1280px) */
+@media (max-width: 1280px) {
+  @mixin texts {
+    h1 {
+      font-size: 3em !important;
+    }
+    p {
+      font-size: 1em !important;
+    }
+  }
+  
+  .About-Texts,
+  .Track-Habilities,
+  .Home-Texts,
+  .Languages-Text {
+    @include texts;
+  }
+
+  .Home-Ball {
+    bottom: -40vh !important;
+  }
+
+  .Languages-Header img {
+    max-height: 20%;
+  }
+
+  .Languages-Ball {
+    top: -10vh !important;
+    max-width: clamp(15rem, 27vw, 35rem);
+    max-height: clamp(13rem, 25vw, 33rem);
+  }
+
+  .Languages-Text {
+    color: white;
+    p {
+      min-width: 90%;
+      text-align: center;
+    }
+  }
+}
+
+/* Tablets e dispositivos médios (até 1024px) */
+@media (max-width: 1024px) {
+  @mixin texts {
+    h1 {
+      font-size: 2em !important;
+    }
+    p {
+      font-size: 0.8em !important;
+    }
+  }
+
+  .About-Texts,
+  .Track-Habilities,
+  .Home-Texts,
+  .Contacts-Text {
+    @include texts;
+  }
+
+  .Hability {
+    padding: 4% !important;
+    img {
+      width: 70%;
+    }
+  }
+
+  .Home-Ball {
+    bottom: -35vh !important;
+  }
+
+  .Languages-Header img {
+    max-height: 20%;
+  }
+
+  .Languages-Ball {
+    top: -10vh !important;
+    max-width: clamp(15rem, 27vw, 35rem);
+    max-height: clamp(13rem, 25vw, 33rem);
+  }
+
+  .Languages-Text {
+    color: white;
+    p {
+      min-width: 90%;
+      text-align: center;
+    }
+  }
+
+  .Contact-Ball {
+    width: 3em !important;
+  }
+
+  .Contacts-Title h1,
+  .Track-Projects h1 {
+    font-size: 2em !important;
+  }
+
+  .Contact {
+    h1 {
+      font-size: 1em;
+    }
+    p {
+      font-size: 0.6em;
+    }
+  }
+
+  .Footer-Links {
+    width: 13%;
+    img {
+      height: 1.5em !important;
+    }
+  }
+}
+
+/* Celulares médios e grandes (até 768px) */
+@media (max-width: 768px) {
+  .Home-Ball {
+    bottom: -25vh !important;
+    max-width: clamp(15rem, 27vw, 35rem);
+    max-height: clamp(13rem, 25vw, 33rem);
+  }
+
+  .Languages-Header {
+    height: 20vh !important;
+    .Header-Div {
+      width: 25% !important;
+      height: 100%;
+    }
+    img {
+      width: auto;
+      max-height: 15% !important;
+    }
+  }
+
+  .Track-About {
+    height: 70vh !important;
+  }
+
+  .Track-Languages {
+    height: 50vh !important;
+  }
+
+  .Hability {
+    flex-direction: column;
+    text-align: center;
+    padding: 20% 0 !important;
+
+    .Hability-Text,
+    h1,
+    p {
+      width: 100% !important;
+      text-align: center;
+    }
+  }
+
+  .Track-Projects {
+    @include texts;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    padding: 0;
+
+    h1 {
+      padding: 2% 0;
+      height: auto;
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    img {
+      position: absolute;
+      bottom: -1em;
+      left: 0;
+      height: 60%;
+      width: auto;
+      transition: transform 0.5s;
+    }
+
+    img:hover {
+      transform: scale(1.01);
+    }
+
+    .Project-Main {
+      width: 70%;
+      height: 80%;
+      background: #ffffff;
+      box-shadow: 0px 16px 32px -8px rgba(12, 12, 13, 0.4);
+      border-radius: 24px;
+    }
+  }
+
+  .Track-Contacts {
+    padding-top: 5vh;
+    height: 80vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    .Contacts-Title {
+      height: 10% !important;
+      margin-bottom: 1em;
+    }
+
+    .Contacts-Main {
+      height: 50% !important;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .Contact {
+        width: 60% !important;
+
+        .Contact-Text {
+          width: 50%;
+          text-align: start;
+        }
+      }
+    }
+
+    .Contacts-Text {
+      flex-direction: column;
+      justify-content: space-between !important;
+      align-items: center !important;
+      height: auto !important;
+
+      h1 {
+        font-size: 1em !important;
+        width: 100% !important;
+        height: 40% !important;
+        text-align: center;
+      }
+
+      p {
+        padding: 0 !important;
+        width: 100% !important;
+        height: 20% !important;
+        font-size: 0.5em !important;
+      }
+
+      img {
+        height: 30vh !important;
+        position: relative !important;
+      }
+    }
+  }
+
+  .Footer {
+    flex-direction: column;
+    height: 20vh !important;
+    .Footer-Links{
+      position: relative !important;
+      width: 60% !important;
+      margin-right: 0% !important;
+    }
+    p {
+      font-size: 0.8em !important;
+    }
+  }
+}
+
+/* Telas pequenas (celulares pequenos, até 480px) */
+@media (max-width: 480px) {
+  .Track-Home{
+    justify-content: start !important;
+    height: 70vh !important;
+  }
+  .About-Texts{
+    text-align: center ;
+  }
+  .Home-Image{
+        img {
+          width: 70% !important;
+        }
+  }
+  .Habilities-Header h1{
+    font-size: 1.5em !important;
+  }
+  .Languages-Text{
+    height: 60% !important;
+  }
+  .Home-Ball{
+    bottom: -15vh !important;
+  }
+  .Track-About{
+    height: 50vh !important;
+  }
+  .Header-Div{
+   flex-direction: column; 
+  }
+  .Languages-Ball{
+    top: -5vh !important;
+    max-width: clamp(13rem, 22vw, 30rem);
+    max-height: clamp(13rem, 25vw, 33rem);
+  }
+  .Track-Projects h1{
+    font-size: 1.5em !important;
+    padding: 10% 0 !important;
+  }
+  .Track-Projects{
+    img{
+        height: 40% !important;
+    }
+  }
+  .Project-Main{
+    width: 100% !important;
+  }
+  .Contacts-Text{
+    text-align: center !important;
+  }
 }
