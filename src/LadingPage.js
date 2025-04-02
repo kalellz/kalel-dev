@@ -103,7 +103,7 @@ function App() {
             />
             <Hability position={2} img={Fullstack}
             h1="Full-Stack" 
-            p="Tenho experiência no desenvolvimento full-stack, manipulando tecnologias como Node.js, React, JavaScript, C#, MySQL, Next.js, Vue.js e Vercel. Além disso, utilizo Sass, Material UI e outras bibliotecas para criar aplicações modernas, responsivas e escaláveis. Minha abordagem visa otimizar desempenho e usabilidade, garantindo um código eficiente e bem estruturado. 🌍"
+            p="Tenho experiência no desenvolvimento full-stack, manipulando tecnologias como Node.js, React, JavaScript, C#, MySQL, Next.js, Vue.js e Vercel. Além disso, utilizo Sass, TailwindCss e outras bibliotecas para criar aplicações modernas, responsivas e escaláveis. Minha abordagem visa otimizar desempenho e usabilidade, garantindo um código eficiente e bem estruturado. 🌍"
             />
             <Hability position={1} img={Equipe}
              h1="Equipe & Organização" 
