@@ -6,7 +6,7 @@ import Memoji1 from './assets/images/melhor-removebg-preview.png';
 import Memoji2 from './assets/images/IMG_8239__1_-removebg-preview.png';
 import Memoji3 from './assets/images/IMG_8240-removebg-preview 1.png';
 import Memoji4 from './assets/images/IMG_8244-removebg-preview 1.png';
-import Me from './assets/images/C5CDF8CF-3398-4C9F-A190-71C9874A741C.jpeg';
+import Me from './assets/images/C5CDF8CF-3398-4C9F-A190-71C9874A741C.png';
 
 import Csharp from './assets/images/languages/c-sharp-c-icon-1822x2048-wuf3ijab.png';
 import Js from './assets/images/languages/javascript.png';
@@ -116,7 +116,7 @@ function App() {
             Novos Projetos Em Breve...
           </h1>
           <div className='Project-Main'>
-
+            
           </div>
           <img src={Memoji3} />
         </section>
