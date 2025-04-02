@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/kalel-dev/static/css/main.cc8f3260.css",
-    "main.js": "/kalel-dev/static/js/main.b7d453dd.js",
+    "main.js": "/kalel-dev/static/js/main.9e0b6541.js",
+    "static/media/C5CDF8CF-3398-4C9F-A190-71C9874A741C.png": "/kalel-dev/static/media/C5CDF8CF-3398-4C9F-A190-71C9874A741C.ca74fe59425fa1c2109a.png",
     "static/media/IMG_8240-removebg-preview 1.png": "/kalel-dev/static/media/IMG_8240-removebg-preview 1.f5846b464c42d7ebc37c.png",
     "static/media/melhor-removebg-preview.png": "/kalel-dev/static/media/melhor-removebg-preview.0e9996123807f06376a3.png",
     "static/media/IMG_8239__1_-removebg-preview.png": "/kalel-dev/static/media/IMG_8239__1_-removebg-preview.d08cbd476a1fe58c2049.png",
     "static/media/c-sharp-c-icon-1822x2048-wuf3ijab.png": "/kalel-dev/static/media/c-sharp-c-icon-1822x2048-wuf3ijab.dcfd7cba519fc03651fb.png",
-    "static/media/C5CDF8CF-3398-4C9F-A190-71C9874A741C.jpeg": "/kalel-dev/static/media/C5CDF8CF-3398-4C9F-A190-71C9874A741C.b5cab569fcca5b6a40e9.jpeg",
     "static/media/react-icon-1024x897-k6c5dil3.png": "/kalel-dev/static/media/react-icon-1024x897-k6c5dil3.8cf15fe9a546ffb69e65.png",
     "static/media/IMG_8244-removebg-preview 1.png": "/kalel-dev/static/media/IMG_8244-removebg-preview 1.b23ad6203303298c1088.png",
     "static/media/plano-tatico.png": "/kalel-dev/static/media/plano-tatico.c77fa9da53a0ac1fd794.png",
@@ -19,10 +19,10 @@
     "static/media/nodejs-logo-svgrepo-com.svg": "/kalel-dev/static/media/nodejs-logo-svgrepo-com.052babfd08e751811f34816a1fab3a6a.svg",
     "index.html": "/kalel-dev/index.html",
     "main.cc8f3260.css.map": "/kalel-dev/static/css/main.cc8f3260.css.map",
-    "main.b7d453dd.js.map": "/kalel-dev/static/js/main.b7d453dd.js.map"
+    "main.9e0b6541.js.map": "/kalel-dev/static/js/main.9e0b6541.js.map"
   },
   "entrypoints": [
     "static/css/main.cc8f3260.css",
-    "static/js/main.b7d453dd.js"
+    "static/js/main.9e0b6541.js"
   ]
 }
