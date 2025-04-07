@@ -129,11 +129,11 @@ function App() {
             />
             <Hability position={2} img={Fullstack}
             h1="Full-Stack" 
-            p="Tenho experiência no desenvolvimento full-stack, manipulando tecnologias como Node.js, React, JavaScript, C#, MySQL, Next.js, Vue.js e Vercel. Além disso, utilizo Sass, TailwindCss e outras bibliotecas para criar aplicações modernas, responsivas e escaláveis. Minha abordagem visa otimizar desempenho e usabilidade, garantindo um código eficiente e bem estruturado. 🌍"
+            p="Tenho experiência no desenvolvimento full-stack, manipulando tecnologias como Node.js, React, JavaScript, C#, MySQL e Next.js. Além disso, utilizo Sass, TailwindCss e outras bibliotecas para criar aplicações modernas, responsivas e escaláveis. Minha abordagem visa otimizar desempenho e usabilidade, garantindo um código eficiente e bem estruturado. 🌍"
             />
             <Hability position={1} img={Equipe}
              h1="Equipe & Organização" 
-             p="Escrevo códigos limpos e fáceis de entender, facilitando a colaboração em equipe e a manutenção dos projetos. Enquanto aprendo inglês intermediário/avançado, também aprimoro minhas habilidades de comunicação para tornar o trabalho em equipe ainda mais eficiente. Utilizo ferramentas como Figma, Trello, GitHub e outras plataformas de gerenciamento para manter o fluxo de trabalho organizado e produtivo. Acredito que a comunicação e a clareza no código são essenciais para o sucesso de qualquer projeto.🤝"
+             p="Escrevo códigos limpos e fáceis de entender, facilitando a colaboração em equipe e a manutenção dos projetos. Enquanto aprendo inglês intermediário/avançado, também aprimoro minhas habilidades de comunicação para tornar o trabalho em equipe ainda mais eficiente. Utilizo ferramentas como Figma, Trello, Monday, GitHub, Azure DevOps e outras plataformas de gerenciamento para manter o fluxo de trabalho organizado e produtivo. Acredito que a comunicação e a clareza no código são essenciais para o sucesso de qualquer projeto.🤝"
              />
           </main>
         </section>
