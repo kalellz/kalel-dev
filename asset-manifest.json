@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kalel-dev/static/css/main.69a8008a.css",
-    "main.js": "/kalel-dev/static/js/main.513b8b1e.js",
+    "main.css": "/kalel-dev/static/css/main.bd6e139e.css",
+    "main.js": "/kalel-dev/static/js/main.734c0bca.js",
     "static/media/C5CDF8CF-3398-4C9F-A190-71C9874A741C.png": "/kalel-dev/static/media/C5CDF8CF-3398-4C9F-A190-71C9874A741C.ca74fe59425fa1c2109a.png",
     "static/media/IMG_8240-removebg-preview 1.png": "/kalel-dev/static/media/IMG_8240-removebg-preview 1.f5846b464c42d7ebc37c.png",
     "static/media/melhor-removebg-preview.png": "/kalel-dev/static/media/melhor-removebg-preview.0e9996123807f06376a3.png",
@@ -18,11 +18,11 @@
     "static/media/image 1.png": "/kalel-dev/static/media/image 1.0ce7054cb64f4e6b4048.png",
     "static/media/nodejs-logo-svgrepo-com.svg": "/kalel-dev/static/media/nodejs-logo-svgrepo-com.052babfd08e751811f34816a1fab3a6a.svg",
     "index.html": "/kalel-dev/index.html",
-    "main.69a8008a.css.map": "/kalel-dev/static/css/main.69a8008a.css.map",
-    "main.513b8b1e.js.map": "/kalel-dev/static/js/main.513b8b1e.js.map"
+    "main.bd6e139e.css.map": "/kalel-dev/static/css/main.bd6e139e.css.map",
+    "main.734c0bca.js.map": "/kalel-dev/static/js/main.734c0bca.js.map"
   },
   "entrypoints": [
-    "static/css/main.69a8008a.css",
-    "static/js/main.513b8b1e.js"
+    "static/css/main.bd6e139e.css",
+    "static/js/main.734c0bca.js"
   ]
 }
