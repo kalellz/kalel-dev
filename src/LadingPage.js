@@ -1,6 +1,8 @@
 import './LandingPage.scss';
 import { Link } from 'react-scroll';
+import { useEffect } from 'react';
 import Hability from './components/hability';
+import ScrollReveal from 'scrollreveal';
 
 import Memoji1 from './assets/images/melhor-removebg-preview.png';
 import Memoji2 from './assets/images/IMG_8239__1_-removebg-preview.png';
@@ -32,6 +34,30 @@ import Linkedin from './assets/images/footer/image 2.png';
 import Github2 from './assets/images/footer/image 1.png';
 
 function App() {  
+  useEffect(() => {
+
+    ScrollReveal().reveal('.Track-Habilities', {
+      delay: 200,
+      distance: '200px',
+      origin: 'bottom',
+      duration: 1000
+    });
+
+    ScrollReveal().reveal('.Track-Projects', {
+      delay: 200,
+      distance: '50px',
+      origin: 'bottom',
+      duration: 1000
+    });
+
+    ScrollReveal().reveal('.Track-Contacts', {
+      delay: 200,
+      distance: '50px',
+      origin: 'bottom',
+      duration: 1000
+    });
+  }, []);
+
   return (
     <main className='Body'>
       <header className='Header'>

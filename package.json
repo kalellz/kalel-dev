@@ -15,6 +15,7 @@
     "react-scroll": "^1.9.3",
     "sass": "^1.85.0",
     "sass-loader": "^16.0.5",
+    "scrollreveal": "^4.0.9",
     "web-vitals": "^2.1.0"
   },
   "devDependencies": {
