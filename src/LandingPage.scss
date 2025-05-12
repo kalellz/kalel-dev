@@ -232,27 +232,47 @@ html, body {
       }
       .Habilities-Main{
         color: white;
-        background-color: #202020;
-        width: 100%;
-        height: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4em;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
+        padding: 6em;
+        background: linear-gradient(180deg, #202020 0%, rgba(32, 32, 32, 0.25) 22.6%, rgba(44, 44, 44, 0) 50%, #2C2C2C 100%);
+
         .Hability{
+
+          /* Auto layout */
           display: flex;
+          flex-direction: column;
+          justify-content: space-between;
           align-items: center;
-          justify-content: center;
-          padding: 13% 0;
+          padding: 4em 1.5em;
+          
+          width: calc(50% - 2em);
+          height: 80vh;
+          
+          background: linear-gradient(180deg, rgba(32, 32, 32, 0.5) 0%, rgba(48, 48, 48, 0.5) 100%);
+          border-radius: 16px;
+          
           .Hability-Text{
+            height: 100%;
             @include texts;
-            width: 65%;
+            text-align: center;
             display: flex;
-            justify-content: center;
-            align-items: start;
+            justify-content: space-around;
+            align-items: center;
             padding: 0 5%;
             margin: 0;
+            width: 100%;
             h1, p {
+              height: auto;
+              width: auto;
               margin: 0;
               padding: 2% 0;
+              text-align: center;
             }
             p{
               user-select: all;
@@ -264,51 +284,37 @@ html, body {
             }
           }
           img{
-            width: 20vw;
+            width: 10vw;
             transition: transform 0.5s;
           }
           img:hover{
             transform: scale(1.01);
           }
+          .Hability-Button{
+            text-decoration: none;
+            /* Frame 7 */
+            color: #E6E6E6;
+            box-sizing: border-box;
+            font-size: 1em;
+            /* Auto layout */
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: .5em 1em;
+            gap: 10px;
+            cursor: pointer;
+            background: rgba(230, 230, 230, 0.05);
+            border: 2px solid rgba(230, 230, 230, 0.2);
+            border-radius: 2em;
+            transition: all 0.5s;
+            &:hover{
+              background: rgba(230, 230, 230, 0.1);
+              border: 2px solid rgba(230, 230, 230, 0.4);
+              transform: scale(1.04);
+            }
+          }
         }
-      }
-    }
-    .Track-Projects{
-      @include texts;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: center;
-      height: 100vh;
-      background-color: white;
-      position: relative;
-      padding: 0;
-      h1{
-        padding: 2% 0;
-        height: auto;
-        margin: 0;
-        font-size: 2.5em;
-      }
-      img{
-        position: absolute;
-        bottom: -1em;
-        left: 0;
-        height: 60%;
-        width: auto;
-        transition: transform 0.5s;
-      }
-      img:hover{
-        transform: scale(1.01);
-      }
-      .Project-Main{
-        width: 70%;
-        height: 80%;
-
-        background: #FFFFFF;
-        /* Drop Shadow/600 */
-        box-shadow: 0px 16px 32px -8px rgba(12, 12, 13, 0.4);
-        border-radius: 24px;
-
       }
     }
     .Track-Contacts {
@@ -498,9 +504,14 @@ html, body {
   .Contacts-Text {
     @include texts;
   }
-
+  .Habilities-Main{
+    align-items: center !important;
+    justify-content: center !important;
+  }
   .Hability {
     padding: 4% !important;
+    width: 80% !important;
+
     img {
       width: 70%;
     }
@@ -532,8 +543,7 @@ html, body {
     width: 3em !important;
   }
 
-  .Contacts-Title h1,
-  .Track-Projects h1 {
+  .Contacts-Title h1 {
     font-size: 2em !important;
   }
 
@@ -581,12 +591,22 @@ html, body {
   .Track-Languages {
     height: 50vh !important;
   }
-
+  .Habilities-Main{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    gap: 1em !important;
+    
+  }
   .Hability {
     flex-direction: column;
     text-align: center;
     padding: 20% 0 !important;
-    
+    width: 100% !important;
+    border: none !important;
+    background: none !important;
+
     img{
       width: 50% !important;
     }
@@ -597,47 +617,6 @@ html, body {
       text-align: center;
     }
   }
-
-  .Track-Projects {
-    @include texts;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    height: 100vh;
-    background-color: white;
-    position: relative;
-    padding: 0;
-
-    h1 {
-      padding: 2% 0;
-      height: auto;
-      margin: 0;
-      font-size: 2.5em;
-    }
-
-    img {
-      position: absolute;
-      bottom: -1em;
-      left: 0;
-      height: 60%;
-      width: auto;
-      transition: transform 0.5s;
-    }
-
-    img:hover {
-      transform: scale(1.01);
-    }
-
-    .Project-Main {
-      width: 70%;
-      height: 80%;
-      background: #ffffff;
-      box-shadow: 0px 16px 32px -8px rgba(12, 12, 13, 0.4);
-      border-radius: 24px;
-    }
-  }
-
   .Track-Contacts {
     padding-top: 5vh;
     height: 80vh !important;
@@ -742,18 +721,6 @@ html, body {
     top: -5vh !important;
     max-width: clamp(13rem, 22vw, 30rem);
     max-height: clamp(13rem, 25vw, 33rem);
-  }
-  .Track-Projects h1{
-    font-size: 1.5em !important;
-    padding: 10% 0 !important;
-  }
-  .Track-Projects{
-    img{
-        height: 40% !important;
-    }
-  }
-  .Project-Main{
-    width: 100% !important;
   }
   .Contacts-Text{
     text-align: center !important;

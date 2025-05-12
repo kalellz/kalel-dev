@@ -1,6 +1,6 @@
 import './LandingPage.scss';
 import { Link } from 'react-scroll';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Hability from './components/hability';
 import ScrollReveal from 'scrollreveal';
 
@@ -23,6 +23,7 @@ import Htmlcss from './assets/images/languages/htmlcss.png';
 import Logic from './assets/images/habilities/plano-tatico.png';
 import Fullstack from './assets/images/habilities/fullstack.png';
 import Equipe from './assets/images/habilities/equipe.png';
+import Curriculo from './assets/images/habilities/curriculo.png';
 import Contact from './components/contact';
 
 import Loc from './assets/images/contacts/pin-de-localizacao 1.png';
@@ -34,8 +35,10 @@ import Linkedin from './assets/images/footer/image 2.png';
 import Github2 from './assets/images/footer/image 1.png';
 
 function App() {  
-  useEffect(() => {
+  const [repos, setRepos] = useState([]);
 
+  useEffect(() => {
+    // ScrollReveal configurations
     ScrollReveal().reveal('.Track-Habilities', {
       delay: 200,
       distance: '200px',
@@ -56,6 +59,17 @@ function App() {
       origin: 'bottom',
       duration: 1000
     });
+
+    // Fetch GitHub repositories
+    fetch('https://api.github.com/users/kalellz/repos')
+      .then(response => response.json())
+      .then(data => {
+        const sortedRepos = data.sort((a, b) => 
+          new Date(b.created_at) - new Date(a.created_at)
+        );
+        setRepos(sortedRepos);
+      })
+      .catch(error => console.error('Error fetching repos:', error));
   }, []);
 
   return (
@@ -123,28 +137,23 @@ function App() {
             </h1>
           </header>
           <main className='Habilities-Main'>
-            <Hability position={1} img={Logic}
+            <Hability img={Logic}
             h1="Lógica" 
-            p="Tenho uma base sólida e uma lógica de programação bem desenvolvida, o que me permite desenvolver projetos que envolvem o uso de APIs, integração com bancos de dados e a criação de componentes reutilizáveis. Busco sempre escrever um código que garanta a escalabilidade e a boa manutenção dos meus projetos. 🚀"
+            p="Tenho uma base sólida em lógica de programação, o que me permite desenvolver soluções eficientes com APIs, bancos de dados e componentes reutilizáveis. Sempre busco escrever códigos escaláveis, claros e de fácil manutenção. 💻🚀"
             />
-            <Hability position={2} img={Fullstack}
+            <Hability img={Fullstack}
             h1="Full-Stack" 
-            p="Tenho experiência no desenvolvimento full-stack, manipulando tecnologias como Node.js, React, JavaScript, C#, MySQL e Next.js. Além disso, utilizo Sass, TailwindCss e outras bibliotecas para criar aplicações modernas, responsivas e escaláveis. Minha abordagem visa otimizar desempenho e usabilidade, garantindo um código eficiente e bem estruturado. 🌍"
+            p="Tenho experiência no desenvolvimento full-stack com tecnologias como Node.js, React, JavaScript, MySQL, Next.js, Vue.js e Vercel. Utilizo Sass, Material UI e outras bibliotecas para criar aplicações modernas, responsivas e bem estruturadas, com foco em desempenho e usabilidade. 🌍✨"
             />
-            <Hability position={1} img={Equipe}
-             h1="Equipe & Organização" 
-             p="Escrevo códigos limpos e fáceis de entender, facilitando a colaboração em equipe e a manutenção dos projetos. Enquanto aprendo inglês intermediário/avançado, também aprimoro minhas habilidades de comunicação para tornar o trabalho em equipe ainda mais eficiente. Utilizo ferramentas como Figma, Trello, Monday, GitHub, Azure DevOps e outras plataformas de gerenciamento para manter o fluxo de trabalho organizado e produtivo. Acredito que a comunicação e a clareza no código são essenciais para o sucesso de qualquer projeto.🤝"
+            <Hability img={Equipe}
+             h1="Equipe e Organização" 
+             p="Escrevo códigos limpos e acessíveis, que facilitam o trabalho em equipe e a manutenção dos projetos. Enquanto avanço no inglês, também evoluo na comunicação, usando ferramentas como Figma, Trello e GitHub para manter tudo organizado e produtivo. Comunicação e clareza são pilares do meu trabalho. 🤝🧠"
+             />
+             <Hability img={Curriculo} button="Baixe meu CV"
+             h1="Currículo" 
+             p="Baixe meu currículo e venha se conectar comigo. Estou sempre aberto a novos desafios e oportunidades! 📄💬"
              />
           </main>
-        </section>
-        <section className='Track-Projects' id='Projetos'>
-          <h1>
-            Novos Projetos Em Breve...
-          </h1>
-          <div className='Project-Main'>
-            
-          </div>
-          <img src={Memoji3} />
         </section>
         <section className='Track-Contacts' id='Contato'>
           <div className='Contacts-Title'>
